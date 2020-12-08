@@ -1,0 +1,4 @@
+id,name,type,subtype,agenda,affects,modifier,text
+1,Warrior,Unit,Melee,Domination,Unit,NULL,"Basic military unit"
+2,Archer,Unit,Ranged,Domination,Unit,NULL,"Basic ranged military unit."
+3,Sparring Grounds,Building,Building,NULL,Melee,+20,"Training area for soldiers."
