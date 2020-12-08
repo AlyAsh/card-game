@@ -1,0 +1,86 @@
+HISTORIA CARD GAME
+
+TODO
+- Refine implementation of game phases (Draw, Set, Challenge, etc.)
+- Organize right-side display
+- Fix bug where game phase = 30
+- Implement Player 2
+- Continue to refine and add keywords
+
++---------------------------------------+
+|          PREVIOUS VERSIONS            |
++---------------------------------------+
+
+v.0.4.1 2020-06-29
+- Added 'cost' attribute to cards and a 'cost' function to parse 
+- Refined 'increase' to properly keep track of which cards have already been affected through its 'targets' table
+
+v.0.4.0 2020-06-22 "AND THE KEYWORD WAS MADE FLESH"
+- Created 'Effects' phase to activate all passive effects when needed
+- Created parseKeyword() that extracts 'actionkey' and 'args'
+- Created the first keyword increase() that matches 'subtype' and increases 'attribute' by 'amount'
+
+v.0.3.2 2020-06-22
+- Added 'end' phase to reset unitsplaced counter
+- Fixed but where hand did not refresh properly after setting a card
+- Fixed bug where cardSprites returned to deck were not erased
+- Fixed bugs related to discarding cards
+- Began implementation of gamePhase 'actionWindow' to allow cards with effects to activate
+
+v.0.3.1 2020-06-18 "THE I-LIKE-TO-MOVE-IT UPDATE"
+- Added 'shuffle' which moved the randomness to the deck rather than the card drawn
+- Created general function move() which can handle all/most instances of moving cards for easy access in the future
+- Created keywords table (https://bit.ly/3fEpgHc)
+- Added ability to change phases via buttons
+
+v.0.3.0 2020-06-16
+- Added ability to discard card from the hand
+- Created function dis() to handle discarding
+- Created functions draw_card, return_to_hand, return_to_deck to filter actions related to moving cards from deck, hand, play
+- Created structure for adding phases: mousebutton > zone > phases
+- Cleaned up code
+- Fixed bug where it moves on to challenges phase even if card was not set properly
+
+v.0.2.1 2020-06-15
+- Added additional measures to ensure cards do not stack either in-play or in the hand
+- Added card_click function to filter out computing for clicking on a card
+- Added discard pile and ability to return cards from discard pile to either the hand or the deck
+- Added simple text to cardSprite to show card's name
+- Added deck searching with ability to cancel search
+- [IN PROGRESS] Set up skeleton for creating game phases ('draw', 'set', etc.)
+- [IN PROGRESS] Added ability to right-click a card while in the hand to discard or activate effect
+
+v.0.2.0 2020-06-12 "THE CHALLENGER UPDATE"
+- Refined challenger and defender selection
+- Added ability to compare strengths
+- Added the 'hand' functionality
+- Fixed bug where challenger is still selected when trying to put a card on a non-empty zone
+
+v.0.2.0 2020-06-11
+- Filtered card as a class object
+- Fixed a bug where the card would not snap or reset if above the game mat
+- Added the action of drawing cards with a limit
+- Added card selection/reading and the ability to have multiple cardSprites on screen
+- Added reset button to return cards to deck
+- Created a Mat class to indicate zones for card interactions
+
+v.0.1.0 2020-06-10
+- Created card game mat canvas
+- Added card database reader for csv-type files
+- Filtered reader into 'Util' file
+- Added 'snap-to-grid' for cards in game mat
+
+v.0.1.0 2020-06-09
+- Created game states for main menu and play with button 'links'
+- Added dragging from Michael Ebens (https://ebens.me/post/mouse-dragging-in-love2d)
+
+
+
+
+
+
+
+
+
+
+
