@@ -1,0 +1,6 @@
+id,name,type,subtype,agenda,strength,affects,modifier,text,effect,keyword,cost
+1,Warrior,Unit,Melee,Domination,100,Unit,nil,"Basic military unit",false,nil,0
+2,Archer,Unit,Ranged,Domination,120,Unit,nil,"Basic ranged military unit.",false,nil,0
+3,Sparring Grounds,Backrow,Building,nil,nil,Melee,+20,"Training area for soldiers.",true,increase(Melee;Strength;20),0
+4,Egyptian Builder,Unit,Melee,Domination,50,Building,nil,"Send this card from your Hand to the Discard Pile; add 1 'Egyptian' Building from your Deck to your Hand. You can only use this effect of 'Egyptian Builder' once per turn.",true,nil,0
+5,Great Pyramid,Backrow,Wonder,nil,nil,Reputation,50,"Cannot be sent from the field to anywhere else. This card can only be established by paying 200 Population. Gain 50 Reputation per turn for each 'Egyptian' card you control.",true,nil,200p
