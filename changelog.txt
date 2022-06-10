@@ -1,6 +1,7 @@
 HISTORIA CARD GAME
 
 TODO
+- Fix bug where path to carddb.txt does not work in main.lua
 - Refine implementation of game phases (Draw, Set, Challenge, etc.)
 - Organize right-side display
 - Fix bug where game phase = 30
